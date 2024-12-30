@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #000428, #004e92);
+  font-family: "Arial", sans-serif;
+  color: rgb(31, 21, 64);
+  background-color: black;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+  opacity: 0;
+  animation: fadeIn 5s ease-in-out forwards;
+  color: aqua;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
